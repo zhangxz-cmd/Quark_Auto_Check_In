@@ -1,12 +1,12 @@
 # 夸克网盘自动签到
 
 本项目实现了夸克网盘的自动签到功能，通过 GitHub Actions 自动执行，领取每日签到奖励空间，让用户无需手动签到。
-本项目基于 BNDou大佬的项目 https://github.com/BNDou/Auto_Check_In 修改而来
+本项目基于 BNDou大佬的项目中夸克网盘自动签到的子功能 https://github.com/BNDou/Auto_Check_In 修改而来
 
 ## 功能简介
 
 - **每日自动签到**：定时运行脚本完成每日签到，领取成长奖励。
-- **GitHub Actions 托管**：代码托管在 GitHub 上，设置后每天自动执行，实现真正的“一劳永逸”。
+- **GitHub Actions 托管**：代码托管在 GitHub 上，设置后每天上午九点自动执行，实现真正的“一劳永逸”。
 
 ## 使用指南
 
@@ -36,7 +36,7 @@
 2. **添加到 GitHub Secrets**
    - 打开你的 Fork 仓库，进入 **Settings -> Secrets and variables -> Actions**。
    - 点击 **New repository secret** 按钮，创建一个名为 `COOKIE_QUARK` 的 Secret。
-   - 将刚才复制的 Cookie 粘贴到值中，保存。
+   - 将刚才配置好的 Cookie 粘贴到值中，保存。
 
 ### 3. 启用 GitHub Actions
 
