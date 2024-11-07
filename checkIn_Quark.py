@@ -3,7 +3,8 @@ import re
 import sys 
 import requests 
 
-os.environ['COOKIE_QUARK'] = 'user=张三阿; kps=AARH6mvaCHY4AO8IE5josZBkzU3Ub7Tgw76RBUyM/fgW2+TPbpv7nCcx6owXvzy8rPZi5+gf9cXMRel2VIDw43XMYu/8MMz/nZ4ectI/ejIroA==; sign=AAR/t1LE9ahmxBfb8A8C2a3CCUmcljRadhc+Ac75DRkGW1mlrtkMCnYX1/RdSyH5NMY=; vcode=1730946723243;'
+cookie_list = os.getenv("COOKIE_QUARK").split('\n|&&')
+
 # 替代 notify 功能
 def send(title, message):
     print(f"{title}: {message}")
